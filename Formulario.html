@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+</head>
+<body>
+  <h1>Contacto</h1>
+  <p>Completa el formulario para enviarme un mensaje:</p>
+
+  <form action="" method="post">
+
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" id="nombre" name="nombre" 
+           required 
+           ><br><br>
+
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" 
+           required ><br><br>
+
+
+    <label for="telefono">Teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono" 
+           required pattern="[0-9]{7,15}" 
+           placeholder><br>
+    <small>Solo números, entre 7 y 15 dígitos</small><br><br>
+
+    <label for="web">Sitio web:</label><br>
+    <input type="url" id="web" name="web" 
+          ><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" 
+              required minlength="10" maxlength="500"></textarea>
+             
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
